@@ -1,0 +1,31 @@
+package factory;
+
+public class Problem {
+    interface Database
+{
+    void openConnection();
+    void executeQuery();
+    void closeConnection();
+}
+class MySQL
+{
+    void openMySQLConnection();
+
+    void closeMySQLConnection();
+
+    void executeMySQLQuery();
+}
+
+class Oracle
+{
+    void openOracleConnection();
+
+    void closeOracleConnection();
+
+    void executeOracleQuery(String sql);
+}
+	MySQL mysql = new MySQL();
+	mysql.openMySQLConnection();
+	mysql.executeMySQLQuery();
+	mysql.closeMySQLConnection();
+}

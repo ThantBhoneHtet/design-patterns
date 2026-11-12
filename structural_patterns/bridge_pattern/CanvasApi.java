@@ -1,0 +1,13 @@
+package bridge_pattern;
+
+public class CanvasApi implements DrawingApi {
+    @Override 
+    public void drawCircle() { 
+        System.out.println("Draw Canvas Circle"); 
+    } 
+    
+    @Override   
+    public void drawRectangle() { 
+        System.out.println("Draw Canvas Rectangle"); 
+    }   
+}
